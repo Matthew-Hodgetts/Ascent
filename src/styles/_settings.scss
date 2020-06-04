@@ -3,12 +3,49 @@
 :root {
   --accent1: #f93b50;
   --accent2: #18212f;
-  --accent3: coral;
+  --bodyColor: #18212f;
+
+  // Breakpoints
+  --xs: "0";
+  --sm: "576px";
+  --md: "768px";
+  --lg: "992px";
+  --xl: "1200px";
 }
 // Color system
 
 // Spacing
 $spacer: 1rem;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 0.25,
+    ),
+    2: (
+      $spacer * 0.5,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 1.5,
+    ),
+    5: (
+      $spacer * 3,
+    ),
+    6: (
+      $spacer * 4,
+    ),
+    7: (
+      $spacer * 5,
+    ),
+    8: (
+      $spacer * 6,
+    ),
+  ),
+  $spacers
+);
 
 // Body
 //

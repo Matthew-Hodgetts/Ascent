@@ -1,0 +1,18 @@
+.pageTitle {
+  padding: 5rem 0;
+}
+
+.pageTitle__title {
+  font-weight: 700;
+  font-size: 2rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+  @media only screen and (min-width: 1000px) {
+    font-size: 3.5rem;
+  }
+}
+.pageTitle__subtitle {
+  font-weight: 500;
+  font-size: 1.25rem;
+}

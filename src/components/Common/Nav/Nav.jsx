@@ -8,13 +8,15 @@ const Nav = () => (
     <div className="container-fluid">
       <div className="row">
         <div className="col-2">
-          <img
-            srcSet={`${logo},
+          <Link to="/">
+            <img
+              srcSet={`${logo},
                     ${logo2x} 1.5x`}
-            src={`${logo}`}
-            className="nav__logo"
-            alt="Ascent Agency"
-          />
+              src={`${logo}`}
+              className="nav__logo"
+              alt="Ascent Agency"
+            />
+          </Link>
         </div>
         <div className="col">
           <nav className="nav__menu">
@@ -35,7 +37,7 @@ const Nav = () => (
                 </Link>
               </li>
               <li>
-                <Link to="/contact" activeClassName="current">
+                <Link to="/contact-us" activeClassName="current">
                   Contact us
                 </Link>
               </li>
