@@ -45,43 +45,4 @@
       color: var(--accent1);
     }
   }
-
-  .contact__form {
-    input[type="text"],
-    textarea {
-      width: 100%;
-      display: block;
-      padding: 0.5rem 0.8rem;
-      border: 1px solid rgb(216, 216, 216);
-      color: #505050;
-
-      &::placeholder {
-        font-size: 0.9rem;
-        color: #aaaaaa;
-      }
-    }
-
-    textarea {
-      min-height: 200px;
-    }
-
-    input[type="submit"] {
-      background-color: var(--accent1);
-      color: #fff;
-      font-size: 1.2rem;
-      font-weight: 500;
-      width: 100%;
-      border: none;
-      padding: 1rem;
-      border-radius: 2px;
-      transition: background-color 0.3s ease;
-      will-change: background-color;
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: var(--accent2);
-      }
-    }
-  }
 }

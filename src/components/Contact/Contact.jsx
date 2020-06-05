@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.scss";
 import PageTitle from "@common/PageTitle/PageTitle";
+import ContactForm from "./ContactForm";
 import { GoDeviceMobile, GoMail } from "react-icons/go";
 import { FiInstagram } from "react-icons/fi";
 
@@ -55,49 +56,7 @@ const Contact = () => {
               </a>
             </div>
             <div className="col-md-6">
-              <form action="" className="contact__form">
-                <div className="row">
-                  <div className="col-md-6">
-                    <label htmlFor="name" className="sr-only">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <label htmlFor="name" className="sr-only">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      placeholder="Subject"
-                    />
-                  </div>
-                </div>
-                <div className="row mt-4">
-                  <div className="col">
-                    <label htmlFor="name" className="sr-only">
-                      Message
-                    </label>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                    />
-                  </div>
-                </div>
-                <div className="row mt-4">
-                  <div className="col">
-                    <input type="submit" value="SEND MESSAGE" />
-                  </div>
-                </div>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
