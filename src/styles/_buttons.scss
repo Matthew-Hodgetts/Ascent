@@ -1,0 +1,47 @@
+.btn {
+  padding: 1rem 1.25rem;
+  border-width: 0;
+  border-style: solid;
+  border-color: #000;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: #ccc;
+  transition: all 0.3s ease;
+  &:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  &--small {
+    padding: 0.5rem 1rem;
+  }
+
+  &--large {
+    padding: 1rem 2rem;
+  }
+
+  &--accent1 {
+    background-color: var(--accent1);
+    color: #fff;
+  }
+
+  &--accent2 {
+    background-color: var(--accent2);
+    color: #fff;
+  }
+
+  &.hover--accent1 {
+    &:hover {
+      background-color: var(--accent1);
+      color: #fff;
+    }
+  }
+
+  &.hover--accent2 {
+    &:hover {
+      background-color: var(--accent2);
+      color: #fff;
+    }
+  }
+}
